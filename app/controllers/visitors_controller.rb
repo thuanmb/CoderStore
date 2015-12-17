@@ -1,5 +1,5 @@
 class VisitorsController < ApplicationController
   def index
-    @products = Product.all
+    @products = Product.sort(params[:sort])
   end
 end
